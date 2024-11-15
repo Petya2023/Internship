@@ -33,10 +33,12 @@
 			<div class="container">
 				<div class="nav-box">
 					<div class="logo-box">
-						<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp') ?>" alt="logo"
-							class="logo">
+						<a href="<?php echo site_url(); ?>">
+							<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp') ?>" alt="logo"
+								class="logo">
+						</a>
 					</div>
-					<a href="" class="btn btn--color">Стани член</a>
+					<a href="<?php echo site_url('/membership'); ?>" class="btn btn--color">Членство</a>
 				</div>
 			</div>
 

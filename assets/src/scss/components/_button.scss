@@ -3,9 +3,9 @@
   &:link,
   &:visited {
     text-decoration: none;
-    font-size: 1.8rem;
-    padding: 1.5rem 3rem;
-    border-radius: 1.5rem;
+    font-weight: 600;
+    padding: 0.9375em 1.875em;
+    border-radius: 0.9375em;
     border: none;
     text-transform: uppercase;
     position: relative;
@@ -14,12 +14,12 @@
     cursor: pointer;
     transition: all 0.3s;
     will-change: transform;
-    box-shadow: 0.2rem 0.6rem 1rem rgba(#333, 0.15);
+    box-shadow: 0.125em 0.375em 0.625em rgba(#333, 0.15);
   }
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0.2rem 1.2rem 1rem rgba(#333, 0.15);
+    box-shadow: 0.125em 0.75em 0.625em rgba(#333, 0.15);
   }
 
   &--color {
