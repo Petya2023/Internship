@@ -29,27 +29,30 @@
 		<?php do_action('storefront_before_header'); ?>
 
 		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-
-			<div class="logo-box">
-				<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp') ?>" alt="logo" class="logo">
+			<div class="container">
+				<div class="nav-box">
+					<div class="logo-box">
+						<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp') ?>" alt="logo"
+							class="logo">
+					</div>
+					<a href="" class="btn btn--color">Стани член
+					</a>
+				</div>
 			</div>
-			<a href="" class="btn btn--black">Стани член
-	</div>
+		</header><!-- #masthead -->
 
-	</header><!-- #masthead -->
+		<?php
+		/**
+		 * Functions hooked in to storefront_before_content
+		 *
+		 * @hooked storefront_header_widget_region - 10
+		 * @hooked woocommerce_breadcrumb - 10
+		 */
+		do_action('storefront_before_content');
+		?>
 
-	<?php
-	/**
-	 * Functions hooked in to storefront_before_content
-	 *
-	 * @hooked storefront_header_widget_region - 10
-	 * @hooked woocommerce_breadcrumb - 10
-	 */
-	do_action('storefront_before_content');
-	?>
+		<div id="content" class="site-content" tabindex="-1">
+			<div class="col-full">
 
-	<div id="content" class="site-content" tabindex="-1">
-		<div class="col-full">
-
-			<?php
-			do_action('storefront_content_top');
+				<?php
+				do_action('storefront_content_top');
