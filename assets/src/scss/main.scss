@@ -1,7 +1,12 @@
-@use "layouts/header";
-@use "layouts/footer";
-
-@use "components/button";
+@use "abstracts/variables";
+@use "abstracts/animations";
 
 @use "base/base";
 @use "base/utility";
+@use "base/typography";
+
+@use "components/button";
+@use "layouts/header";
+@use "layouts/footer";
+
+@use "pages/front-page";

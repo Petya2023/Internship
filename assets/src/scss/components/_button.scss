@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .btn {
   &,
   &:link,
@@ -23,7 +25,7 @@
   }
 
   &--color {
-    background-color: #01c3ff;
+    background-color: $color-primary;
     color: #fff;
   }
 

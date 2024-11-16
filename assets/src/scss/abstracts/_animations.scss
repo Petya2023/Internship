@@ -1,0 +1,36 @@
+@keyframes moveRight {
+  0% {
+    left: 45%;
+    opacity: 0;
+  }
+  50% {
+    left: 55%;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    right: 55%;
+    opacity: 0;
+  }
+  50% {
+    left: 45%;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
