@@ -42,11 +42,11 @@
 						<div class="menu-header-menu">
 							<ul class="menu">
 								<div class="dropdown">
-									<li class="menu-item"><a href="javascript:void(0);">Конституция</a>
+									<li class="menu-item"><a href="javascript:void(0);">Конституция и проекти</a>
 									</li>
 									<div class="dropdown__content">
 										<?php
-										$page = get_page_by_path('конституция');  // Replace 'your-page-slug' with the actual slug of the page
+										$page = get_page_by_path('constitution');  // Replace 'your-page-slug' with the actual slug of the page
 										if ($page) {
 											$page_id = $page->ID;
 										}
@@ -126,8 +126,8 @@
 											)
 										); ?>
 									</div>
-								</div>
-								<li class="menu-item"><a href="<?php echo site_url('/za-nas'); ?>">Контакти</a></li> -->
+								</div> -->
+								<li class="menu-item"><a href="<?php echo site_url('/za-nas'); ?>">Контакти</a></li>
 							</ul>
 						</div>
 					</div>

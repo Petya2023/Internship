@@ -12,24 +12,23 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
 
+<section>
+    <div class="container">
         <h1><?php the_title(); ?></h1>
+        <p>Конституцията на Република България е основният закон на държавата, който регламентира правата, задълженията
+            и свободите на гражданите, както и структурата на държавната власт. Приета е на 12 юли 1991 г. от VII Велико
+            Народно събрание и отразява основните принципи на демократичното управление в страната. Тук можете да
+            намерите актуалния текст на Конституцията и да се запознаете с основните й положения.</p>
+        <a href="" class="btn btn--color">Конституция</a>
+    </div>
+</section>
 
-        <?php
-        $page = get_page_by_path('конституция');  // Replace 'your-page-slug' with the actual slug of the page
-        if ($page) {
-            $page_id = $page->ID;
-        }
-        ?>
-        <!-- <?php
-        if (wp_get_post_parent_id(get_the_ID())) { ?>
-            hi
-        <?php }
-        ?> -->
+<!-- <iframe src="<?php echo get_theme_file_uri('test.pdf'); ?>" width="100%" height="1200px"></iframe> -->
 
-    </main><!-- #main -->
+</section>
+
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php
