@@ -16,7 +16,12 @@ get_header(); ?>
             <div class="page-content">
 
                 <header class="page-header">
-                    <h1 class="page-title"><?php esc_html_e('Страницата не може да бъде открита.', 'storefront'); ?>
+                    <section>
+                        <div class="container">
+                            <h1 class="page-title">
+                                <?php esc_html_e('Страницата не може да бъде открита.', 'storefront'); ?>
+                        </div>
+                    </section>
                     </h1>
                 </header><!-- .page-header -->
 

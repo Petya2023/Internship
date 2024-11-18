@@ -16,11 +16,9 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="col-full">
-
         <div class="footer-box">
             &copy; <?php echo date(format: 'Y'); ?> <?php echo get_bloginfo('name'); ?>
         </div>
-
     </div><!-- .col-full -->
 </footer><!-- #colophon -->
 

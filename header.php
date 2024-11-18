@@ -69,8 +69,8 @@
 										?>
 									</div>
 								</div>
-								<div class="dropdown">
-									<li class="menu-item"><a href="<?php echo site_url('/дейности'); ?>">
+								<!-- <div class="dropdown">
+									<li class="menu-item"><a href="javascript:void(0);">
 											Дейности</a>
 									</li>
 									<div class="dropdown__content">
@@ -97,7 +97,7 @@
 										}
 										?>
 									</div>
-								</div>
+								</div> -->
 								<!-- <li class="menu-item"><a href="<?php echo site_url('/avtopark'); ?>">Граждански
 										трибунати</a>
 								</li>
@@ -127,7 +127,6 @@
 										); ?>
 									</div>
 								</div> -->
-								<li class="menu-item"><a href="<?php echo site_url('/za-nas'); ?>">Контакти</a></li>
 							</ul>
 						</div>
 					</div>
