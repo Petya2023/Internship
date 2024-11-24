@@ -15,15 +15,17 @@ get_header(); ?>
 
 <section>
     <div class="container">
-        <h1><?php the_title(); ?></h1>
-        <p><?php the_field('paragraph'); ?></p>
-        <div class="center">
-            <?php
-            $button_text = get_post_meta(get_the_ID(), 'button', true);
-            if (!empty($button_text)):
-                ?>
-                <a href="<?php the_field('pdf'); ?>" class="btn btn--color"><?php the_field('button'); ?></a>
-            <?php endif; ?>
+        <div class="content-wrap">
+            <h1><?php the_title(); ?></h1>
+            <p><?php the_field('paragraph'); ?></p>
+            <div class="center">
+                <?php
+                $button_text = get_post_meta(get_the_ID(), 'button', true);
+                if (!empty($button_text)):
+                    ?>
+                    <a href="<?php the_field('pdf'); ?>" class="btn btn--color"><?php the_field('button'); ?></a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>

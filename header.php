@@ -131,8 +131,49 @@
 						</div>
 					</div>
 					<a href="<?php echo site_url('/membership'); ?>" class="btn btn--color">Членство</a>
+
+					<div class="menu-header-menu-container sidebar">
+						<div class="menu-header-menu">
+							<span class="icon icon-x">&times;</span>
+							<ul class="sidebar-menu-list">
+								<div class="dropdown dropdown-responsive">
+									<li class="menu-item sidebar-li"><a href="javascript:void(0);">Дестинации</a>
+									</li>
+									<div class="dropdown__content-responsive">
+										<?php wp_list_categories(
+											array(
+												'title_li' => '',
+												'child_of' => 10,
+											)
+										); ?>
+									</div>
+								</div>
+								<div class="dropdown dropdown-responsive-2">
+									<li class="menu-item sidebar-li"><a href="javascript:void(0)">Избрани
+											пътешествия</a>
+									</li>
+									<div class="dropdown__content-responsive-2">
+										<?php wp_list_categories(
+											array(
+												'title_li' => '',
+												'child_of' => 11,
+											)
+										); ?>
+									</div>
+								</div>
+								<li class="menu-item sidebar-li"><a
+										href="<?php echo site_url('/avtopark'); ?>">Автобусен
+										транспорт</a>
+								</li>
+								<li class="menu-item sidebar-li"><a href="<?php echo site_url('/za-nas'); ?>">За нас</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hamburger-menu hidden-cross">
+						<i class="fa-solid fa-bars"></i>
+					</div>
 				</div>
-			</div>
 
 		</header><!-- #masthead -->
 

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1.875em;
 }
 
 .logo {
@@ -78,4 +79,53 @@
   &:not(:last-child) {
     padding-right: 1.0625em;
   }
+}
+
+.hidden-cross {
+  display: none;
+  font-size: 3rem;
+  color: $color-dark;
+  cursor: pointer;
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+
+.sidebar {
+  backdrop-filter: blur(1rem);
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 11;
+  width: 50%;
+  background-color: rgba($color-white, 0.8);
+  box-shadow: -1rem 0 1rem rgba(0, 0, 0, 0.2);
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.sidebar li,
+.sidebar li a {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.sidebar-menu-list {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sidebar-menu-list li a {
+  color: $color-dark;
+}
+
+.icon-x {
+  transition: 0.2s;
+  padding: 2.5rem;
+  font-size: 4rem;
 }

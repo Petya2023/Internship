@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .container {
   max-width: 71.25em;
   margin: 0 auto;
@@ -8,15 +10,15 @@
   //     padding: 0 5rem;
   //   }
   // }
-  // @include respond(tab-land) {
-  //   max-width: 94rem;
-  // }
-  // @include respond(tab-port) {
-  //   max-width: 74rem;
-  // }
-  // @include respond(phone) {
-  //   max-width: 54rem;
-  // }
+  @include respond(tab-land) {
+    max-width: 58.75em;
+  }
+  @include respond(tab-port) {
+    max-width: 46.25em;
+  }
+  @include respond(phone) {
+    max-width: 33.75em;
+  }
 }
 
 .mt-3 {
@@ -34,4 +36,8 @@ section {
 .center {
   display: flex;
   justify-content: center;
+}
+
+.content-wrap {
+  padding: 0 1.875em;
 }
