@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "Roboto";
-  src: url(/font/Roboto-Regular.woff) format("woff");
-  font-weight: 400;
-}
-
 li {
   list-style: none;
+  white-space: nowrap;
 }
 
 ul {
@@ -18,4 +13,8 @@ h1 {
 
 a {
   text-decoration: none !important;
+}
+
+a:focus {
+  outline: transparent !important;
 }

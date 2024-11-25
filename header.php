@@ -29,30 +29,29 @@
 		<?php do_action('storefront_before_header'); ?>
 
 		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
-
 			<div class="container">
-				<div class="nav-box">
-					<div class="logo-box">
-						<a href="<?php echo site_url(); ?>">
-							<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp') ?>" alt="logo"
-								class="logo">
-						</a>
-					</div>
+				<nav class="navigation">
+					<a href="<?php echo site_url(); ?>">
+						<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp'); ?>" alt="Logo"
+							class="navigation__logo">
+					</a>
 					<div class="menu-header-menu-container">
 						<div class="menu-header-menu">
 							<ul class="menu">
 								<div class="dropdown">
-									<li class="menu-item"><a href="javascript:void(0);">Конституция и проекти</a>
+									<li class="menu-item">
+										<a href="javascript:void(0);">Нормативни актове</a>
 									</li>
 									<div class="dropdown__content">
 										<?php
-										$page = get_page_by_path('constitution');  // Replace 'your-page-slug' with the actual slug of the page
+										$page = get_page_by_path('normative-acts');  // Replace 'your-page-slug' with the actual slug of the page
 										if ($page) {
 											$page_id = $page->ID;
 										}
 
 										$child_pages = get_pages(
 											array(
+												'sort_column' => 'menu_order',
 												'child_of' => $page_id,
 											)
 										);
@@ -64,24 +63,25 @@
 											}
 											echo '</ul>';
 										} else {
-											echo 'No child pages found.';
+											echo 'Няма открити страници';
 										}
 										?>
 									</div>
 								</div>
-								<!-- <div class="dropdown">
-									<li class="menu-item"><a href="javascript:void(0);">
-											Дейности</a>
+								<div class="dropdown">
+									<li class="menu-item">
+										<a href="javascript:void(0);">Проекти</a>
 									</li>
 									<div class="dropdown__content">
 										<?php
-										$page = get_page_by_path('дейности');  // Replace 'your-page-slug' with the actual slug of the page
+										$page = get_page_by_path('projects');  // Replace 'your-page-slug' with the actual slug of the page
 										if ($page) {
 											$page_id = $page->ID;
 										}
 
 										$child_pages = get_pages(
 											array(
+												'sort_column' => 'menu_order',
 												'child_of' => $page_id,
 											)
 										);
@@ -93,46 +93,50 @@
 											}
 											echo '</ul>';
 										} else {
-											echo 'No child pages found.';
+											echo 'Няма открити страници.';
 										}
 										?>
 									</div>
-								</div> -->
-								<!-- <li class="menu-item"><a href="<?php echo site_url('/avtopark'); ?>">Граждански
-										трибунати</a>
+								</div>
+								<div class="dropdown">
+									<li class="menu-item">
+										<a href="javascript:void(0);">Гражданска власт</a>
+									</li>
+									<div class="dropdown__content">
+										<?php
+										$page = get_page_by_path('civil-authority');  // Replace 'your-page-slug' with the actual slug of the page
+										if ($page) {
+											$page_id = $page->ID;
+										}
+
+										$child_pages = get_pages(
+											array(
+												'sort_column' => 'menu_order',
+												'child_of' => $page_id,
+											)
+										);
+
+										if (!empty($child_pages)) {
+											echo '<ul>';
+											foreach ($child_pages as $child_page) {
+												echo '<li><a href="' . get_permalink($child_page->ID) . '">' . esc_html($child_page->post_title) . '</a></li>';
+											}
+											echo '</ul>';
+										} else {
+											echo 'Няма открити страници.';
+										}
+										?>
+									</div>
+								</div>
+								<li class="menu-item">
+									<a href="<?php echo site_url('/contacts'); ?>">Контакти</a>
 								</li>
-								<div class="dropdown">
-									<li class="menu-item"><a href="<?php echo site_url('/blog'); ?>">Граждански
-											делегати</a>
-									</li>
-									<div class="dropdown__content">
-										<?php wp_list_categories(
-											array(
-												'title_li' => '',
-												'child_of' => 11,
-											)
-										); ?>
-									</div>
-								</div>
-								<div class="dropdown">
-									<li class="menu-item"><a href="<?php echo site_url('/blog'); ?>">Документи и
-											решения</a>
-									</li>
-									<div class="dropdown__content">
-										<?php wp_list_categories(
-											array(
-												'title_li' => '',
-												'child_of' => 11,
-											)
-										); ?>
-									</div>
-								</div> -->
 							</ul>
 						</div>
 					</div>
 					<a href="<?php echo site_url('/membership'); ?>" class="btn btn--color">Членство</a>
 
-					<div class="menu-header-menu-container sidebar">
+					<!-- <div class="menu-header-menu-container sidebar">
 						<div class="menu-header-menu">
 							<span class="icon icon-x">&times;</span>
 							<ul class="sidebar-menu-list">
@@ -172,9 +176,9 @@
 					</div>
 					<div class="hamburger-menu hidden-cross">
 						<i class="fa-solid fa-bars"></i>
-					</div>
-				</div>
-
+					</div> -->
+				</nav>
+			</div>
 		</header><!-- #masthead -->
 
 		<?php

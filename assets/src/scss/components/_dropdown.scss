@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 3s;
+
+  &:hover .dropdown__content {
+    display: block;
+    // @include respond(tab-port) {
+    //   display: none;
+    // }
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    background-color: $color-white;
+    padding-top: 1em;
+    z-index: 1;
+    transition: all 3s;
+  }
+}
