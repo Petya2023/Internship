@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 li {
   list-style: none;
   white-space: nowrap;
@@ -12,6 +14,7 @@ h1 {
   font-size: 3.75em !important;
   font-weight: 600 !important;
   margin: 0 !important;
+  white-space: nowrap;
 }
 
 h2 {
@@ -39,4 +42,5 @@ a:focus {
 
 p {
   margin: 0 !important;
+  color: $color-dark !important;
 }

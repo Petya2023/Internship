@@ -19,7 +19,7 @@ get_header(); ?>
 <section>
     <div class="container">
         <div class="content-wrap">
-            <p><?php the_field('paragraph'); ?></p>
+            <p class="u-margin-bottom-medium"><?php the_field('paragraph'); ?></p>
             <div class="center">
                 <?php
                 $button_text = get_post_meta(get_the_ID(), 'button', true);
