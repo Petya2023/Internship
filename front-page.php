@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<section class="section-frontpage">
+<section class="section section--frontpage">
     <div class="text-box">
         <h1 class="title-main">Бъдеще за демократична България</h1>
         <h3 class="sub-title">Работим за по-добра конституция и граждански контрол</h3>

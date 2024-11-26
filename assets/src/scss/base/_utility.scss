@@ -61,3 +61,7 @@ section {
 .content-wrap {
   padding: 0 1.875em;
 }
+
+.title {
+  @include center;
+}

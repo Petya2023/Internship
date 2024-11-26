@@ -7,7 +7,7 @@
     text-decoration: none;
     font-weight: 600;
     padding: 0.9375em 1.875em;
-    border-radius: 0.5em;
+    border-radius: 0.5em !important;
     border: none;
     text-transform: uppercase;
     position: relative;
@@ -25,15 +25,15 @@
   }
 
   &--color {
-    background-color: $color-dark;
-    color: #fff;
+    background-color: $color-dark !important;
+    color: #fff !important;
   }
 
   &:active {
     transform: scale(0.97);
   }
 
-  &:focus {
-    outline: transparent;
+  &--submit:focus {
+    outline-color: $color-primary !important;
   }
 }
