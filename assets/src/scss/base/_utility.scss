@@ -21,8 +21,28 @@
   }
 }
 
+.text-colored {
+  color: $color-primary;
+}
+
 .mt-3 {
   margin-top: 1.25em;
+}
+
+.u-margin-bottom-tiny {
+  margin-bottom: 0.4375em !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.5em !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 3.75em !important;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 6.25em !important;
 }
 
 section {

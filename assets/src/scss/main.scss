@@ -8,8 +8,10 @@
 
 @use "components/button";
 @use "components/dropdown";
+@use "components/contacts-input";
 
 @use "layouts/header";
 @use "layouts/footer";
 
 @use "pages/front-page";
+@use "pages/contacts";
