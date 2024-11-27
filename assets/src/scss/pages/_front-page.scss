@@ -11,7 +11,7 @@
   }
   &--page {
     background-image: url(../src/images/blue.jpg);
-    height: 35vh;
+    height: 30vh;
     display: block;
   }
 }
@@ -27,6 +27,9 @@
 
 .title-main {
   color: #fff;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0.3125em !important;
   /* // position: absolute;
   // transform: translate(-50%, -50%);
   // top: 35%;

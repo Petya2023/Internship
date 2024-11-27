@@ -3,6 +3,8 @@
 .container {
   max-width: 71.25em;
   margin: 0 auto;
+  height: 100%;
+  position: relative;
   // &--nav {
   //   height: 100%;
   //   padding: 0 8rem;
@@ -25,8 +27,8 @@
   color: $color-primary;
 }
 
-.mt-3 {
-  margin-top: 1.25em;
+.u-margin-top-small {
+  margin-top: 1.5625em !important;
 }
 
 .u-margin-bottom-tiny {
@@ -64,4 +66,5 @@ section {
 
 .title {
   @include center;
+  width: 100%;
 }

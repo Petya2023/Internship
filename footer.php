@@ -15,12 +15,26 @@
 <?php do_action('storefront_before_footer'); ?>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="col-full">
-        <div class="footer-box">
-            &copy; <?php echo date(format: 'Y'); ?> <?php echo get_bloginfo('name'); ?>
-            <a href="https://www.linkedin.com/in/petya-naydenova/" target="_blank">Уеб разработка от Петя Найденова</a>
-        </div>
-    </div><!-- .col-full -->
+    <div class="footer-box">
+        <!-- <div class="footer-box__up">
+            <i class="fa-regular fa-envelope u-margin-bottom-tiny"></i>
+            <p><?php the_field('email'); ?></p>
+            <i class="fa-solid fa-mobile u-margin-bottom-tiny"></i>
+            <p><?php the_field(''); ?></p>
+            <i class="fa-solid fa-location-dot u-margin-bottom-tiny"></i> -->
+
+    </div>
+    <div class="footer-box__down">
+        <p class="footer-box__down__copyrights u-margin-bottom-tiny u-margin-top-small">&copy;
+            <?php echo date(format: 'Y'); ?>
+            <?php echo get_bloginfo('name'); ?>
+        </p>
+        <a href="https://www.linkedin.com/in/petya-naydenova/" target="_blank"
+            class="footer-box__down__developed-by">Уеб
+            разработка
+            от Петя Найденова</a>
+    </div>
+    </div>
 </footer><!-- #colophon -->
 
 <?php do_action('storefront_after_footer'); ?>

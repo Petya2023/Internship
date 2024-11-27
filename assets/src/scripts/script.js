@@ -19,6 +19,17 @@ function openDropdown2() {
   dropdownContent2.style.display = "block";
 }
 
+const dropdownContent3 = document.querySelector(
+  ".dropdown__content-responsive-3"
+);
+const sidebarLi3 = document.querySelector(".dropdown-responsive-3");
+
+sidebarLi3.addEventListener("click", openDropdown3);
+
+function openDropdown3() {
+  dropdownContent3.style.display = "block";
+}
+
 // CLOSE AND OPEN MENU
 function closeMenu() {
   sidebar.style.display = "none";

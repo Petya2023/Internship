@@ -1,7 +1,22 @@
-.footer-box {
+@use "../abstracts" as *;
+
+.footer-box__down {
+  border-top: 1px solid $color-light-grey;
   display: flex;
+  margin: 0 7.5em;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  &__developed-by {
+    font-size: 0.875em;
+    text-align: center;
+  }
+  &__copyrights {
+    font-size: 0.875em;
+  }
+}
+
+.site-footer {
+  padding-bottom: 1.875em !important;
 }

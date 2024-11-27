@@ -11,10 +11,12 @@ ul {
 
 h1 {
   text-align: center;
-  font-size: 3.75em !important;
+  font-size: 3.4375em !important;
   font-weight: 600 !important;
   margin: 0 !important;
-  white-space: nowrap;
+  @include respond(tab-port) {
+    font-size: 2.8125em !important;
+  }
 }
 
 h2 {
