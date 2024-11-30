@@ -1,13 +1,14 @@
 @use "../abstracts" as *;
 
-.footer-box__down {
-  border-top: 1px solid $color-light-grey;
-  display: flex;
-  margin: 0 7.5em;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+.footer-box {
+  &__down {
+    border-top: 1px solid $color-light-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   &__developed-by {
     font-size: 0.875em;
     text-align: center;
@@ -15,8 +16,16 @@
   &__copyrights {
     font-size: 0.875em;
   }
+  &__up {
+    margin: 1em;
+  }
 }
 
 .site-footer {
   padding-bottom: 1.875em !important;
+}
+
+#menu-footermenulocation li a {
+  font-weight: 400;
+  text-transform: none;
 }

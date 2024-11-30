@@ -17,3 +17,14 @@ function features()
 }
 
 add_action('after_setup_theme', 'features');
+
+function theme_custom_logo_setup()
+{
+    add_theme_support('custom-logo', array(
+        'height' => 100,   // Adjust dimensions as needed
+        'width' => 400,   // Adjust dimensions as needed
+        'flex-height' => true,
+        'flex-width' => true,
+    ));
+}
+add_action('after_setup_theme', 'theme_custom_logo_setup');

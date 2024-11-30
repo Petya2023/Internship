@@ -25,7 +25,8 @@ get_header(); ?>
                 $button_text = get_post_meta(get_the_ID(), 'button', true);
                 if (!empty($button_text)):
                     ?>
-                    <a href="<?php the_field('pdf'); ?>" class="btn btn--color"><?php the_field('button'); ?></a>
+                    <a href="<?php the_field('pdf'); ?>" target="blank_"
+                        class="btn btn--color"><?php the_field('button'); ?></a>
                 <?php endif; ?>
             </div>
         </div>

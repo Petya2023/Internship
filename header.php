@@ -31,14 +31,19 @@
 		<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 			<div class="container">
 				<nav class="navigation">
-					<a href="<?php echo site_url(); ?>">
-						<img src="<?php echo get_theme_file_uri('assets/src/images/logo.webp'); ?>" alt="Logo"
-							class="navigation__logo">
-					</a>
+					<?php
+					if (function_exists(function: 'the_custom_logo')) {
+						the_custom_logo();
+					}
+					?>
 					<div class="menu-header-menu-container">
 						<div class="menu-header-menu">
 							<ul class="menu">
+								<li class="menu-item"><a href="<?php echo site_url(); ?>">Начало</a></li>
+								<li class="menu-item"><a href="<?php echo site_url('/about-us'); ?>">За нас</a></li>
+
 								<div class="dropdown">
+
 									<li class="menu-item">
 										<a href="javascript:void(0);">Нормативни актове</a>
 									</li>
@@ -134,7 +139,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="<?php echo site_url('/membership'); ?>" class="btn btn--color">Членство</a>
+					<a href="<?php echo site_url('/membership'); ?>" class="btn btn--color btn--nav">Членство</a>
 
 					<div class="menu-header-menu-container sidebar">
 						<div class="menu-header-menu">

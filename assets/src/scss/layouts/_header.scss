@@ -4,10 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.875em;
 
   &__logo {
     height: 6.25em;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 1.875em;
   }
 }
 
@@ -37,7 +40,7 @@
 }
 
 .menu-item a {
-  font-size: 0.9375em;
+  font-size: 0.875em;
   text-transform: uppercase;
   transition: 0.3s;
   font-weight: 600;
@@ -51,6 +54,10 @@
   &:not(:last-child) {
     padding-right: 1.0625em;
   }
+}
+
+.menu-header-menu-container {
+  padding: 0 1em;
 }
 
 .hidden-cross {
